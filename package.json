@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "NODE_ENV=production npm run build:browser && npm run build:es && npm run build:umd",
+    "build:browser": "rollup --config build/rollup.config.browser.js",
+    "build:es": "rollup --config build/rollup.config.es.js",
+    "build:umd": "rollup --config build/rollup.config.umd.js"
   },
-  "main": "src/index.js",
+  "main": "dist/hikosdk.umd.js",
+  "module": "dist/hikosdk.esm.js",
+  "unpkg": "dist/hikosdk.min.js",
   "dependencies": {
     "core-js": "3.3.2",
     "vue": "2.6.10"
@@ -29,7 +34,17 @@
     "vue-template-compiler": "2.6.10",
     "webpack": "4.41.2",
     "webpack-cli": "3.3.9",
-    "webpack-dev-server": "3.9.0"
+    "webpack-dev-server": "3.9.0",
+    "rollup": "^1.10.0",
+    "rollup-plugin-analyzer": "^3.0.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-css-only": "^1.0.0",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-vue": "^5.0.0"
   },
   "eslintConfig": {
     "root": true,
