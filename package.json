@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "webpack --config config/webpack.config.js"
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "core-js": "3.3.2",
