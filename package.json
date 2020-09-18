@@ -12,8 +12,8 @@
   "module": "dist/hikosdk.esm.js",
   "unpkg": "dist/hikosdk.min.js",
   "dependencies": {
-    "core-js": "3.3.2",
-    "vue": "2.6.10"
+    "core-js": "^3.3.2",
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "4.0.0",
