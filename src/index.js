@@ -12,8 +12,6 @@ export function install (Vue) {
   Vue.component('hk-content', content);
 }
 
-export const VRegister = Register
-
 const plugin = {
   install
 }

@@ -425,7 +425,6 @@
     Vue.component('hk-category', __vue_component__$2);
     Vue.component('hk-content', __vue_component__$3);
   }
-  const VRegister = Register;
   const plugin = {
     install
   }; // Auto-install
@@ -442,7 +441,6 @@
     GlobalVue.use(plugin);
   }
 
-  exports.VRegister = VRegister;
   exports.default = plugin;
   exports.install = install;
 
