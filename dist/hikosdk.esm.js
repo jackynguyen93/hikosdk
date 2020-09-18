@@ -188,14 +188,14 @@ __vue_render__._withStripped = true;
 
 const __vue_inject_styles__ = function (inject) {
   if (!inject) return;
-  inject("data-v-45289926_0", {
-    source: "\nul.breadcrumb[data-v-45289926] {\n    padding: 10px 16px;\n    list-style: none;\n    background-color: #eee;\n}\nul.breadcrumb li[data-v-45289926] {\n    display: inline;\n    font-size: 18px;\n}\nul.breadcrumb li + li[data-v-45289926]:before {\n    padding: 8px;\n    color: black;\n    content: \"/\\00a0\";\n}\nul.breadcrumb li a[data-v-45289926] {\n    color: #0275d8;\n    text-decoration: none;\n}\nul.breadcrumb li a[data-v-45289926]:hover {\n    color: #01447e;\n    text-decoration: underline;\n}\n",
+  inject("data-v-63952ff8_0", {
+    source: "\nul.breadcrumb[data-v-63952ff8] {\n    padding: 10px 16px;\n    list-style: none;\n    background-color: #eee;\n}\nul.breadcrumb li[data-v-63952ff8] {\n    display: inline;\n    font-size: 18px;\n}\nul.breadcrumb li + li[data-v-63952ff8]:before {\n    padding: 8px;\n    color: black;\n    content: \"/\\00a0\";\n}\nul.breadcrumb li a[data-v-63952ff8] {\n    color: #0275d8;\n    text-decoration: none;\n}\nul.breadcrumb li a[data-v-63952ff8]:hover {\n    color: #01447e;\n    text-decoration: underline;\n}\n",
     map: {
       "version": 3,
-      "sources": ["/Users/nguyen/work/hikosdk/src/components/register/register.vue"],
+      "sources": ["F:\\Work\\hikosdk\\src\\components\\breadcrumb\\breadcrumb.vue"],
       "names": [],
       "mappings": ";AAsBA;IACA,kBAAA;IACA,gBAAA;IACA,sBAAA;AACA;AACA;IACA,eAAA;IACA,eAAA;AACA;AACA;IACA,YAAA;IACA,YAAA;IACA,iBAAA;AACA;AACA;IACA,cAAA;IACA,qBAAA;AACA;AACA;IACA,cAAA;IACA,0BAAA;AACA",
-      "file": "register.vue",
+      "file": "breadcrumb.vue",
       "sourcesContent": ["<template>\n    <ul class=\"breadcrumb\">\n        <li v-for=\"item in items\" :key=\"item.href\">\n            <a v-show=\"item.href && item.href.length>0 && !item.actvie\" :href=\"item.href\">{{item.text}}</a>\n            <span v-show=\"item.active && item.active === true\">{{item.text}}</span>\n        </li>\n    </ul>\n</template>\n\n<script>\n  export default {\n    props: {\n      items: {\n        type: Array,\n        required: true,\n        default: () => []\n      }\n    }\n  };\n</script>\n\n<style scoped>\n    ul.breadcrumb {\n        padding: 10px 16px;\n        list-style: none;\n        background-color: #eee;\n    }\n    ul.breadcrumb li {\n        display: inline;\n        font-size: 18px;\n    }\n    ul.breadcrumb li + li:before {\n        padding: 8px;\n        color: black;\n        content: \"/\\00a0\";\n    }\n    ul.breadcrumb li a {\n        color: #0275d8;\n        text-decoration: none;\n    }\n    ul.breadcrumb li a:hover {\n        color: #01447e;\n        text-decoration: underline;\n    }\n</style>"]
     },
     media: undefined
@@ -204,7 +204,7 @@ const __vue_inject_styles__ = function (inject) {
 /* scoped */
 
 
-const __vue_scope_id__ = "data-v-45289926";
+const __vue_scope_id__ = "data-v-63952ff8";
 /* module identifier */
 
 const __vue_module_identifier__ = undefined;
@@ -220,12 +220,206 @@ const __vue_component__ = /*#__PURE__*/normalizeComponent({
   staticRenderFns: __vue_staticRenderFns__
 }, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, createInjector, undefined, undefined);
 
+//
+//
+//
+//
+//
+//
+var script$1 = {
+  name: 'Login',
+  props: {
+    className: {
+      type: String,
+      default: ''
+    }
+  }
+};
+
+/* script */
+const __vue_script__$1 = script$1;
+/* template */
+
+var __vue_render__$1 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c("div", {
+    class: _vm.className
+  }, [_vm._v("\n  login\n")]);
+};
+
+var __vue_staticRenderFns__$1 = [];
+__vue_render__$1._withStripped = true;
+/* style */
+
+const __vue_inject_styles__$1 = function (inject) {
+  if (!inject) return;
+  inject("data-v-ff857d42_0", {
+    source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    map: {
+      "version": 3,
+      "sources": [],
+      "names": [],
+      "mappings": "",
+      "file": "login.vue"
+    },
+    media: undefined
+  });
+};
+/* scoped */
+
+
+const __vue_scope_id__$1 = "data-v-ff857d42";
+/* module identifier */
+
+const __vue_module_identifier__$1 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$1 = false;
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$1 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$1,
+  staticRenderFns: __vue_staticRenderFns__$1
+}, __vue_inject_styles__$1, __vue_script__$1, __vue_scope_id__$1, __vue_is_functional_template__$1, __vue_module_identifier__$1, false, createInjector, undefined, undefined);
+
+//
+//
+//
+//
+//
+//
+var script$2 = {
+  name: 'Category'
+};
+
+/* script */
+const __vue_script__$2 = script$2;
+/* template */
+
+var __vue_render__$2 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c("div", [_vm._v("\n  category\n")]);
+};
+
+var __vue_staticRenderFns__$2 = [];
+__vue_render__$2._withStripped = true;
+/* style */
+
+const __vue_inject_styles__$2 = function (inject) {
+  if (!inject) return;
+  inject("data-v-5aa39383_0", {
+    source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    map: {
+      "version": 3,
+      "sources": [],
+      "names": [],
+      "mappings": "",
+      "file": "category.vue"
+    },
+    media: undefined
+  });
+};
+/* scoped */
+
+
+const __vue_scope_id__$2 = "data-v-5aa39383";
+/* module identifier */
+
+const __vue_module_identifier__$2 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$2 = false;
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$2 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$2,
+  staticRenderFns: __vue_staticRenderFns__$2
+}, __vue_inject_styles__$2, __vue_script__$2, __vue_scope_id__$2, __vue_is_functional_template__$2, __vue_module_identifier__$2, false, createInjector, undefined, undefined);
+
+//
+//
+//
+//
+//
+//
+var script$3 = {
+  name: 'Content'
+};
+
+/* script */
+const __vue_script__$3 = script$3;
+/* template */
+
+var __vue_render__$3 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c("div", [_vm._v("\n  Content\n")]);
+};
+
+var __vue_staticRenderFns__$3 = [];
+__vue_render__$3._withStripped = true;
+/* style */
+
+const __vue_inject_styles__$3 = function (inject) {
+  if (!inject) return;
+  inject("data-v-b8c82ff4_0", {
+    source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    map: {
+      "version": 3,
+      "sources": [],
+      "names": [],
+      "mappings": "",
+      "file": "content.vue"
+    },
+    media: undefined
+  });
+};
+/* scoped */
+
+
+const __vue_scope_id__$3 = "data-v-b8c82ff4";
+/* module identifier */
+
+const __vue_module_identifier__$3 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$3 = false;
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$3 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$3,
+  staticRenderFns: __vue_staticRenderFns__$3
+}, __vue_inject_styles__$3, __vue_script__$3, __vue_scope_id__$3, __vue_is_functional_template__$3, __vue_module_identifier__$3, false, createInjector, undefined, undefined);
+
 function install(Vue) {
   if (install.installed) return;
   install.installed = true;
-  Vue.component('hk-register', __vue_component__);
+  Vue.component('hk-breadcrumb', __vue_component__);
+  Vue.component('hk-login', __vue_component__$1);
+  Vue.component('hk-category', __vue_component__$2);
+  Vue.component('hk-content', __vue_component__$3);
 }
-const VRegister = __vue_component__;
+const VRegister = Register;
 const plugin = {
   install
 }; // Auto-install
