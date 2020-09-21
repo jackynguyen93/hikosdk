@@ -2,6 +2,7 @@ import breadcrumb from './components/breadcrumb/breadcrumb.vue';
 import login from './components/login/login.vue';
 import category from './components/news/category.vue';
 import content from './components/news/content.vue';
+import users from './components/users/users.vue';
 
 export function install (Vue) {
   if (install.installed) return
@@ -10,6 +11,7 @@ export function install (Vue) {
   Vue.component('hk-login', login);
   Vue.component('hk-category', category);
   Vue.component('hk-content', content);
+  Vue.component('hk-users', users);
 }
 
 const plugin = {

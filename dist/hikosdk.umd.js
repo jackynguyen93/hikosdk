@@ -194,11 +194,11 @@
 
   const __vue_inject_styles__ = function (inject) {
     if (!inject) return;
-    inject("data-v-63952ff8_0", {
-      source: "\nul.breadcrumb[data-v-63952ff8] {\n    padding: 10px 16px;\n    list-style: none;\n    background-color: #eee;\n}\nul.breadcrumb li[data-v-63952ff8] {\n    display: inline;\n    font-size: 18px;\n}\nul.breadcrumb li + li[data-v-63952ff8]:before {\n    padding: 8px;\n    color: black;\n    content: \"/\\00a0\";\n}\nul.breadcrumb li a[data-v-63952ff8] {\n    color: #0275d8;\n    text-decoration: none;\n}\nul.breadcrumb li a[data-v-63952ff8]:hover {\n    color: #01447e;\n    text-decoration: underline;\n}\n",
+    inject("data-v-e1858cb4_0", {
+      source: "\nul.breadcrumb[data-v-e1858cb4] {\n    padding: 10px 16px;\n    list-style: none;\n    background-color: #eee;\n}\nul.breadcrumb li[data-v-e1858cb4] {\n    display: inline;\n    font-size: 18px;\n}\nul.breadcrumb li + li[data-v-e1858cb4]:before {\n    padding: 8px;\n    color: black;\n    content: \"/\\00a0\";\n}\nul.breadcrumb li a[data-v-e1858cb4] {\n    color: #0275d8;\n    text-decoration: none;\n}\nul.breadcrumb li a[data-v-e1858cb4]:hover {\n    color: #01447e;\n    text-decoration: underline;\n}\n",
       map: {
         "version": 3,
-        "sources": ["F:\\Work\\hikosdk\\src\\components\\breadcrumb\\breadcrumb.vue"],
+        "sources": ["/Users/nguyen/work/hikosdk/src/components/breadcrumb/breadcrumb.vue"],
         "names": [],
         "mappings": ";AAsBA;IACA,kBAAA;IACA,gBAAA;IACA,sBAAA;AACA;AACA;IACA,eAAA;IACA,eAAA;AACA;AACA;IACA,YAAA;IACA,YAAA;IACA,iBAAA;AACA;AACA;IACA,cAAA;IACA,qBAAA;AACA;AACA;IACA,cAAA;IACA,0BAAA;AACA",
         "file": "breadcrumb.vue",
@@ -210,7 +210,7 @@
   /* scoped */
 
 
-  const __vue_scope_id__ = "data-v-63952ff8";
+  const __vue_scope_id__ = "data-v-e1858cb4";
   /* module identifier */
 
   const __vue_module_identifier__ = undefined;
@@ -264,7 +264,7 @@
 
   const __vue_inject_styles__$1 = function (inject) {
     if (!inject) return;
-    inject("data-v-ff857d42_0", {
+    inject("data-v-89c2ebfa_0", {
       source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
       map: {
         "version": 3,
@@ -279,7 +279,7 @@
   /* scoped */
 
 
-  const __vue_scope_id__$1 = "data-v-ff857d42";
+  const __vue_scope_id__$1 = "data-v-89c2ebfa";
   /* module identifier */
 
   const __vue_module_identifier__$1 = undefined;
@@ -325,7 +325,7 @@
 
   const __vue_inject_styles__$2 = function (inject) {
     if (!inject) return;
-    inject("data-v-5aa39383_0", {
+    inject("data-v-3db261e1_0", {
       source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
       map: {
         "version": 3,
@@ -340,7 +340,7 @@
   /* scoped */
 
 
-  const __vue_scope_id__$2 = "data-v-5aa39383";
+  const __vue_scope_id__$2 = "data-v-3db261e1";
   /* module identifier */
 
   const __vue_module_identifier__$2 = undefined;
@@ -386,7 +386,7 @@
 
   const __vue_inject_styles__$3 = function (inject) {
     if (!inject) return;
-    inject("data-v-b8c82ff4_0", {
+    inject("data-v-4bb0e668_0", {
       source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
       map: {
         "version": 3,
@@ -401,7 +401,7 @@
   /* scoped */
 
 
-  const __vue_scope_id__$3 = "data-v-b8c82ff4";
+  const __vue_scope_id__$3 = "data-v-4bb0e668";
   /* module identifier */
 
   const __vue_module_identifier__$3 = undefined;
@@ -417,6 +417,94 @@
     staticRenderFns: __vue_staticRenderFns__$3
   }, __vue_inject_styles__$3, __vue_script__$3, __vue_scope_id__$3, __vue_is_functional_template__$3, __vue_module_identifier__$3, false, createInjector, undefined, undefined);
 
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  var script$4 = {
+    name: 'users',
+    props: {
+      users: {
+        type: Array,
+        required: true,
+        default: () => []
+      }
+    }
+  };
+
+  /* script */
+  const __vue_script__$4 = script$4;
+  /* template */
+
+  var __vue_render__$4 = function () {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c("ul", {
+      staticClass: "users"
+    }, _vm._l(_vm.users, function (user, index) {
+      return _c("li", {
+        key: index,
+        staticClass: "user"
+      }, [_c("nuxt-link", {
+        attrs: {
+          to: {
+            name: "users-id",
+            params: {
+              id: index
+            }
+          }
+        }
+      }, [_vm._v("\n      " + _vm._s(user.name) + "\n    ")])], 1);
+    }), 0);
+  };
+
+  var __vue_staticRenderFns__$4 = [];
+  __vue_render__$4._withStripped = true;
+  /* style */
+
+  const __vue_inject_styles__$4 = function (inject) {
+    if (!inject) return;
+    inject("data-v-cba2b29c_0", {
+      source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      map: {
+        "version": 3,
+        "sources": [],
+        "names": [],
+        "mappings": "",
+        "file": "users.vue"
+      },
+      media: undefined
+    });
+  };
+  /* scoped */
+
+
+  const __vue_scope_id__$4 = "data-v-cba2b29c";
+  /* module identifier */
+
+  const __vue_module_identifier__$4 = undefined;
+  /* functional template */
+
+  const __vue_is_functional_template__$4 = false;
+  /* style inject SSR */
+
+  /* style inject shadow dom */
+
+  const __vue_component__$4 = /*#__PURE__*/normalizeComponent({
+    render: __vue_render__$4,
+    staticRenderFns: __vue_staticRenderFns__$4
+  }, __vue_inject_styles__$4, __vue_script__$4, __vue_scope_id__$4, __vue_is_functional_template__$4, __vue_module_identifier__$4, false, createInjector, undefined, undefined);
+
   function install(Vue) {
     if (install.installed) return;
     install.installed = true;
@@ -424,6 +512,7 @@
     Vue.component('hk-login', __vue_component__$1);
     Vue.component('hk-category', __vue_component__$2);
     Vue.component('hk-content', __vue_component__$3);
+    Vue.component('hk-users', __vue_component__$4);
   }
   const plugin = {
     install
